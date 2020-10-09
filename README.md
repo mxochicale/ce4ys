@@ -1,5 +1,6 @@
-Code of Ethics for Young Researchers
----
+# Code of Ethics for Young Researchers
+
+![poster](/poster/versions/drawing-v01.png)
 
 ## Engage with the public
 Engaging with the public means having an open two-way 
