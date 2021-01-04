@@ -6,11 +6,11 @@ FIGURES_SVG=$(wildcard svgpath/*.svg)
 FIGURES_PNG=$(subst svgpath/,versions/,$(FIGURES_SVG:.svg=.png))
 FIGURES_PDF=$(subst svgpath/,versions/,$(FIGURES_SVG:.svg=.pdf))
 
-all:	$(FIGURES_PNG)
+all:	$(FIGURES_PNG) $(FIGURES_PDF)
 
 # Pattern rule for converting SVG to PNG
 versions/%.png: svgpath/%.svg
-	$(INKSCAPE) --export-png $(@) $(<)
+	$(INKSCAPE) --export-filename $(@) $(<)
 
 versions/%.pdf: svgpath/%.svg
 	$(INKSCAPE) --export-filename $(@) $(<)
